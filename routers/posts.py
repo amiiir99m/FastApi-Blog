@@ -13,7 +13,7 @@ router = APIRouter()
 
 
 @router.post("/create_post/")
-async def login(
+async def create_new_post(
     db_session: Annotated[AsyncSession, Depends(get_db)],
     data=Depends(PostInput),
     token_data : JWTPayload = Depends(JWTHandler.verify_token),
