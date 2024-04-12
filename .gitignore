@@ -1,8 +1,0 @@
-venv/
-
-*.db
-
-__pycache__/
-
-static/*
-#comment
